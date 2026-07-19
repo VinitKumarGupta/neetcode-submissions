@@ -65,7 +65,7 @@ class MyHashMap {
         while (curr != null) {
             if (curr.key == key) {
                 if (prev == null) {
-                    dataMap[index] = null;  // first node had that key
+                    dataMap[index] = curr.next;  // first node had that key
                 } else {
                     prev.next = curr.next;
                 }
